@@ -1,24 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppCustoViagem.MainPage">
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AppCustoViagem.MainPage"
+             Title="Custo de Viagem"
+             BackgroundColor="#000">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
+    <Grid RowDefinitions="Auto, *, *, *, *, *, *, *, *, *, *" 
+          ColumnDefinitions="Auto, *, *"
+          RowSpacing="10" ColumnSpacing="10"
+          Padding="5" BackgroundColor="#eee">
+        <Label Grid.Row="1" Grid.Column="0"
+               Style="{StaticResource LabelRotulo}"
+               Text="Origem:"/>
+
+        <Label Grid.Row="2" Grid.Column="0"
+               Style="{StaticResource LabelRotulo}"
+               Text="Destino"/>
+
+        <Entry Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+               x:Name="etyOrigem" Placeholder="Nome da Cidade"
+               Style="{StaticResource TextEntrada}"/>
+
+        <Entry Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+               x:Name="etyDestino" Placeholder="Nome da Cidade"
+               Style="{StaticResource TextEntrada}"
+               Keyboard="Text"/>
+
+        <Label Grid.Row="3" Grid.ColumnSpan="3"
+               HorizontalTextAlignment="Center"
+               Style="{StaticResource Titulo}"
+               Text="Consumo Carro"/>
+        
+    </Grid>
 
 </ContentPage>
