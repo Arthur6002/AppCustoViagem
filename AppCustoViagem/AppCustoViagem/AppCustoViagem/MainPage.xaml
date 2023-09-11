@@ -33,7 +33,31 @@
                HorizontalTextAlignment="Center"
                Style="{StaticResource Titulo}"
                Text="Consumo Carro"/>
-        
+
+        <Label Grid.Row="4" Grid.Column="0"
+               Style="{StaticResource Titulo}"
+               Text="Distancia:"/>
+
+        <Label Grid.Row="5" Grid.Column="0"
+               Style="{StaticResource LabelRotulo}"
+               x:Name="lblConsumo" Text="Consumo"/>
+
+        <Label x:Name="lblValorC" Text="Valor Combustivel"
+               Grid.Row="6" Grid.Column="0"
+               FontSize="15"
+               Style="{StaticResource LabelRotulo}"/>
+
+        <Entry x:Name="etyDistancia" Placeholder="Km"
+               Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+               Style="{StaticResource TextEntrada}"/>
+
+        <Entry x:Name="etyConsumo" Placeholder="Km\1"
+               Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="1"
+               Style="{StaticResource TextEntrada}"/>
+
+        <Entry x:Name="etyValorC" Placeholder="R$ 0.0"
+               Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"
+               Style="{StaticResource TextEntrada}"/>
     </Grid>
 
 </ContentPage>
