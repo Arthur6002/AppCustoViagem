@@ -58,6 +58,30 @@
         <Entry x:Name="etyValorC" Placeholder="R$ 0.0"
                Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"
                Style="{StaticResource TextEntrada}"/>
+
+        <Entry x:Name="lblTitulo3" Text="Pedágio"
+               Grid.Row="7" Grid.ColumnSpan="3"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand"
+               Style="{StaticResource Titulo}"/>
+
+        <Label Text="Valor: "
+               Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2"
+               Style="{StaticResource LabelRotulo}"/>
+
+        <Entry x:Name="etyValorP" Placeholder="R$ 0,0"
+               Grid.Row="8" Grid.Column="1" Grid.RowSpan="2"
+               Style="{StaticResource TextEntrada}"/>
+
+        <Button x:Name="btnPedagio" Text="Add" Grid.Row="8" Grid.Column="2" Clicked="btnPedagio_Clicked"/>
+
+        <Button Text="Lista"
+                Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="3"
+                Clicked="btnListaPedagio_Clicked"/>
+
+        <Button Text="Limpar"
+                Grid.Row="10" Grid.Column="2"
+                Clicked="btnLimpar_Clicked"/>
     </Grid>
 
 </ContentPage>

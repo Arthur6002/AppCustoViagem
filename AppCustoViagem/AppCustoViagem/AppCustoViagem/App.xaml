@@ -3,12 +3,63 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
-             x:Class="AppCustoViagem.App">
+           
+             
+             
+             
+             
+             
+         
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+
+             
+        x:Class="AppCustoViagem.App">
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="PlainButton" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#eee"/>
+                <Setter Property="BackgroundColor" Value="#eee
+                        
+                        
+                 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                     
+                        
+                        
+                        
+                        
+                        
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontSize" Value="20"/>
             </Style>

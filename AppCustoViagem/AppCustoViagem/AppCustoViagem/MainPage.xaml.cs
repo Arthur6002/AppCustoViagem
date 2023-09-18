@@ -14,5 +14,20 @@ namespace AppCustoViagem
         {
             InitializeComponent();
         }
+
+        private void btnPedagio_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListaPedagio_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpar_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
