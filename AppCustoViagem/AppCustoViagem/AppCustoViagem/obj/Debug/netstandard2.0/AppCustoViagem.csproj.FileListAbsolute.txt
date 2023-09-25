@@ -1,0 +1,16 @@
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\AppCustoViagem.csproj.AssemblyReference.cache
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\AppCustoViagem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\ListaPedagios.xaml.g.cs
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\AppCustoViagem.AssemblyInfoInputs.cache
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\AppCustoViagem.AssemblyInfo.cs
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\AppCustoViagem.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\bin\Debug\netstandard2.0\AppCustoViagem.deps.json
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\bin\Debug\netstandard2.0\AppCustoViagem.dll
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\bin\Debug\netstandard2.0\ref\AppCustoViagem.dll
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\bin\Debug\netstandard2.0\AppCustoViagem.pdb
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\AppCustoViagem.dll
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\refint\AppCustoViagem.dll
+C:\Users\Usuario\AppCustoViagem\AppCustoViagem\AppCustoViagem\AppCustoViagem\obj\Debug\netstandard2.0\AppCustoViagem.pdb

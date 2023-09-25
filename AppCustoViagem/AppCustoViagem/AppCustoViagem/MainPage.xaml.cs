@@ -12,7 +12,9 @@ namespace AppCustoViagem
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
-        public partial cla MainPage()
+        private App PropriedadesApp;
+
+        public MainPage()
         {
             InitializeComponent();
 
@@ -28,7 +30,7 @@ namespace AppCustoViagem
                 PropriedadesApp.ListaPedagios.Add(new Pedagio
                 {
                     NroPedagia = qntPedagios + 1,
-                    Valor = Convert.ToDecimal(etyValorP.Text)
+                    Valor = Convert.ToInt16(etyValorP.Text)
                 });
             }
             catch(Exception ex)
@@ -38,6 +40,42 @@ namespace AppCustoViagem
         }
 
         private async void btnListaPedagio_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new ListaPedagios());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops", "Ocorreu um erro: " + ex.Message, "Ok");
+            }
+        }
+ 
+        private async void btnLimpar_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                bool confirmar = await DisplayAlert("Tem certeza?", "Limpar todos os dados?", "Sim", "Não");
+
+                if (confirmar)
+                {
+                    etyConsumo.Text = "";
+                    etyDestino.Text = string.Empty;
+                    etyDistancia.Text = "";
+                    etyOrigem.Text = "";
+                    etyValorC.Text = "";
+                    etyValorP.Text = "";
+
+                    PropriedadesApp.ListaPedagios.Clear();
+                }
+            }
+            catch(Exception ex)
+            {
+                await DisplayAlert("Ops", ex.Message, "Ok");
+            }
+        }
+
+        private async void btnCalcular_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -53,16 +91,22 @@ namespace AppCustoViagem
                 decimal consumo = Convert.ToDecimal(etyConsumo.Text);
                 decimal preco_combustivel = Convert.ToDecimal(etyValorC.Text);
                 decimal distancia = Convert.ToDecimal(etyDistancia.Text);
+                //consumo do carro
+                decimal consumo_carro = (distancia / consumo) * preco_combustivel;
+                //Custo total, com os pedagios
+                decimal custo_total = consumo_carro + valor_total_pedagios;
+
+                string origem = etyOrigem.Text;
+                string destino = etyDestino.Text;
+
+                string mensagem = string.Format("Viagem de {0} a {1} custara {2}", origem, destino, custo_total.ToString("C"));
+
+                await DisplayAlert("resultado Final", mensagem, "OK");
             }
             catch(Exception ex)
             {
-
+                await DisplayAlert("Ops", "Ocorreu um erro: " + ex.Message, "Ok");
             }
-        }
-
-        private void btnLimpar_Clicked(object sender, EventArgs e)
-        {
-
         }
     }
 }

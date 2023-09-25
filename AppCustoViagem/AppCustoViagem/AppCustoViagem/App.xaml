@@ -40,26 +40,7 @@
     <Application.Resources>
         <ResourceDictionary>
             <Style x:Key="PlainButton" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#eee
-                        
-                        
-                 
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                     
-                        
-                        
-                        
-                        
-                        
+                <Setter Property="BackgroundColor" Value="#eee"/>
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontSize" Value="20"/>
             </Style>
